@@ -1,9 +1,9 @@
 name: Merge Queue Pipeline
 
 on:
-  merge_group:
-    types: [checks_requested]
-  workflow_dispatch:
+  push:
+    branches:
+      - tmp-try-tumult-tools-32bc0f0
 
 env:
   # Force nox to produce colorful logs:
